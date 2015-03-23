@@ -1,0 +1,91 @@
+﻿La génération a démarré 23/03/2015 22:35:21.
+     1>Projet "D:\Neo-Fufu\Mes documents\Boulot\Modelisation\Modelisation\Modelisation\Modelisation.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Graphe.cpp Main.cpp Sommet.cpp
+         Sommet.cpp
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(593): error C2558: class 'Etiquette' : pas de constructeur de copie disponible ou le constructeur de copie est déclaré 'explicit'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(592) : lors de la compilation de la fonction membre 'void std::allocator<_Ty>::construct(_Ty *,const _Ty &)' de la classe modèle
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(723) : voir la référence à l'instanciation de la fonction modèle 'void std::allocator<_Ty>::construct(_Ty *,const _Ty &)' en cours de compilation
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\type_traits(572) : voir la référence à l'instanciation de la classe modèle 'std::allocator<_Ty>' en cours de compilation
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(650) : voir la référence à l'instanciation de la classe modèle 'std::is_empty<_Alloc>' en cours de compilation
+                 with
+                 [
+                     _Alloc=std::allocator<Etiquette>
+                 ]
+                 d:\neo-fufu\mes documents\boulot\modelisation\modelisation\modelisation\sommet.h(26) : voir la référence à l'instanciation de la classe modèle 'std::vector<Etiquette,std::allocator<_Ty>>' en cours de compilation
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+         Main.cpp
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(593): error C2558: class 'Etiquette' : pas de constructeur de copie disponible ou le constructeur de copie est déclaré 'explicit'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(592) : lors de la compilation de la fonction membre 'void std::allocator<_Ty>::construct(_Ty *,const _Ty &)' de la classe modèle
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(723) : voir la référence à l'instanciation de la fonction modèle 'void std::allocator<_Ty>::construct(_Ty *,const _Ty &)' en cours de compilation
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\type_traits(572) : voir la référence à l'instanciation de la classe modèle 'std::allocator<_Ty>' en cours de compilation
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(650) : voir la référence à l'instanciation de la classe modèle 'std::is_empty<_Alloc>' en cours de compilation
+                 with
+                 [
+                     _Alloc=std::allocator<Etiquette>
+                 ]
+                 d:\neo-fufu\mes documents\boulot\modelisation\modelisation\modelisation\sommet.h(26) : voir la référence à l'instanciation de la classe modèle 'std::vector<Etiquette,std::allocator<_Ty>>' en cours de compilation
+                 with
+                 [
+                     _Ty=Etiquette
+                 ]
+         Graphe.cpp
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(593): error C2558: class 'Sommet' : pas de constructeur de copie disponible ou le constructeur de copie est déclaré 'explicit'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(592) : lors de la compilation de la fonction membre 'void std::allocator<_Ty>::construct(_Ty *,const _Ty &)' de la classe modèle
+                 with
+                 [
+                     _Ty=Sommet
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0(723) : voir la référence à l'instanciation de la fonction modèle 'void std::allocator<_Ty>::construct(_Ty *,const _Ty &)' en cours de compilation
+                 with
+                 [
+                     _Ty=Sommet
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\type_traits(572) : voir la référence à l'instanciation de la classe modèle 'std::allocator<_Ty>' en cours de compilation
+                 with
+                 [
+                     _Ty=Sommet
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(650) : voir la référence à l'instanciation de la classe modèle 'std::is_empty<_Alloc>' en cours de compilation
+                 with
+                 [
+                     _Alloc=std::allocator<Sommet>
+                 ]
+                 d:\neo-fufu\mes documents\boulot\modelisation\modelisation\modelisation\graphe.h(24) : voir la référence à l'instanciation de la classe modèle 'std::vector<Sommet,std::allocator<_Ty>>' en cours de compilation
+                 with
+                 [
+                     _Ty=Sommet
+                 ]
+         Génération de code en cours...
+     1>Génération du projet "D:\Neo-Fufu\Mes documents\Boulot\Modelisation\Modelisation\Modelisation\Modelisation.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:00.88

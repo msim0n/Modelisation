@@ -1,13 +1,15 @@
-#pragma once
-#include "Graphe.h"
+#include <iostream>
+#include "Algo.h"
 
-using namespace std;
-
-class Algo
+Algo::Algo()
 {
-public:
-	Algo(); 
-	~Algo();
-	static Graphe algo(Graphe g);
-	
-};
+}
+
+Algo::~Algo()
+{
+}
+
+/*static*/ Graphe Algo::algo(Graphe g){
+	cout << "coucou" << endl;
+	return g;
+}

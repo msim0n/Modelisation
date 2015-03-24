@@ -47,6 +47,7 @@ void replaceAll(string & str, const string & from, const string & to) {
 		string ligne;
 		vector<Sommet> lsommet;
 		vector<vector<Etiquette>> larrete;
+		int it = 0;
 
 		while (getline(fichier, ligne))
 		{
@@ -55,8 +56,9 @@ void replaceAll(string & str, const string & from, const string & to) {
 				
 				replaceAll(ligne, "  ", " ");
 				vector<string> exp = explode(ligne, ' ');
-				lsommet.push_back(Sommet(stoi(exp[0].erase(0,1))));
-				//lsommet.push_back(it);
+				//lsommet.push_back(Sommet(stoi(exp[0].erase(0,1))));
+				lsommet.push_back(it);
+				it++;
 			}
 
 			else if (arcs && (ligne.substr(0, 3) == "arc"))

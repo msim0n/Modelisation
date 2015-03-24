@@ -1,6 +1,13 @@
+#pragma once
 #include "Graphe.h"
 
-Graphe algo(Graphe g){
-	cout << "lol\n";
-	return g;
-}
+using namespace std;
+
+class Algo
+{
+public:
+	Algo(); 
+	~Algo();
+	static Graphe algo(Graphe g);
+	
+};

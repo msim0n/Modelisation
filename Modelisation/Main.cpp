@@ -79,7 +79,10 @@ int main(int argc, char const *argv[])
 	//G1 = Algo::algo(G1);
 	
 	Graphe grapheFichier = LireFichierGraphe::chargerFichierGraphe("data_VRPTW_10_3_2_4.gpr");
-	cout << grapheFichier << endl;
+	//cout << grapheFichier << endl;
+
+	Graphe algo = Algo::algo(grapheFichier);
+	cout << algo << endl;
 
 	system("pause");
 	return 0;

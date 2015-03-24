@@ -9,8 +9,8 @@ int main(int argc, char const *argv[])
 	/*
 	On tente de faire un petit graphe
 	Trois sommets A(1) B(2) C(3)
-	deux arêtes 1-2 (2;5) et 1-3 (6;3)
-	Les sommets ont des étiquettes vides
+	deux arÃªtes 1-2 (2;5) et 1-3 (6;3)
+	Les sommets ont des Ã©tiquettes vides
 	*/
 
 	Sommet A = Sommet(1);
@@ -23,8 +23,8 @@ int main(int argc, char const *argv[])
 
 	Etiquette AB = Etiquette(2, 5);
 	Etiquette AC = Etiquette(6, 3);
-	//On est obligé de créer des etiquettes vides parce que vector ne semble pas aimer les NULL.
-	//J'ai créé une fonction Etiquette::existe pour savoir si l'etiquette représente une arète ou non.
+	//On est obligÃ© de crÃ©er des etiquettes vides parce que vector ne semble pas aimer les NULL.
+	//J'ai crÃ©Ã© une fonction Etiquette::existe pour savoir si l'etiquette reprÃ©sente une arÃ¨te ou non.
 	Etiquette AA = Etiquette(-1, -1);
 	Etiquette BA = Etiquette(-1, -1);
 	Etiquette BB = Etiquette(-1, -1);
@@ -44,7 +44,7 @@ int main(int argc, char const *argv[])
 	sommetsDeG1.push_back(B);
 	sommetsDeG1.push_back(C);
 
-	//On crée la matrice
+	//On crÃ©e la matrice
 	vector<Etiquette> aretePartantdeA = vector<Etiquette>();
 	aretePartantdeA.push_back(AA);
 	aretePartantdeA.push_back(AB);
@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
 	aretesDeG1.push_back(aretePartantdeB);
 	/*
 	Heuresement de le C/C existe...
-	DONC ! La matrice ressemble à ça
+	DONC ! La matrice ressemble Ã  Ã§a
 	(Null, AB, AC;
 	Null, null, null;
 	null, null, null)
@@ -77,5 +77,10 @@ int main(int argc, char const *argv[])
 	cout << "cool\n";
 	cout << G1;
 	//G1 = Algo::algo(G1);
+	
+	Graphe grapheFichier = LireFichierGraphe::chargerFichierGraphe("data_VRPTW_10_3_2_4.gpr");
+	cout << grapheFichier << endl;
+
+	system("pause");
 	return 0;
 }

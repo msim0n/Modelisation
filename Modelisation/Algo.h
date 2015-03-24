@@ -1,20 +1,13 @@
 #pragma once
 #include "Graphe.h"
+
+using namespace std;
+
 class Algo
 {
 public:
-	Algo();
-	static Graphe algo(Graphe g);
+	Algo(); 
 	~Algo();
-
-private:
-
+	static Graphe algo(Graphe g);
+	
 };
-
-Algo::Algo()
-{
-}
-
-Algo::~Algo()
-{
-}
